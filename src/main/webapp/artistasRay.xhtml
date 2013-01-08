@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<ui:composition 
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+			
+						$('.fancybox').fancybox();
+			
+					});
+				</script>
+				<h:panelGrid columns="2" style="margin-top:155px;width: 100% ">
+			    	<h:column >
+					    <div class="hero-unit" style="margin-top:-665px;">
+				    		<h2>Artistas</h2>
+								   <a href="artistasAdelmo.jsf"><h4>Adelmo</h4></a>
+				    			 <a href="artistasBanner.jsf"><h4>Banner</h4></a>
+				    			 <a href="artistasBossa.jsf"><h4>Bossa</h4></a>
+				    			 <a href="artistasCamargo.jsf"><h4>Camargo</h4></a>
+				    			 <a href="artistasCardoso.jsf"><h5>Cardoso Vieira</h5></a>
+				    			 <a href="artistasKahan.jsf"><h5>Carlos Kahan</h5></a>
+								 <a href="artistasCherbeluka.jsf"><h4>Cherbeluka</h4></a>
+								 <a href="artistasCorsini.jsf"><h4>Corsini</h4></a>
+								 <a href="artistasDaniele.jsf"><h4>Daiele</h4></a>
+								 <a href="artistasHelio.jsf"><h4>Helio</h4></a>
+								  <a href="artistasHiromi.jsf"><h4>Hiromi</h4></a>
+								 <a href="artistasTorres.jsf"><h4>J Torres</h4></a>	
+								 <a href="artistasMauro.jsf"><h4>M Salles</h4></a>
+								  <a href="artistasNelio.jsf"><h4>Nelio</h4></a>					    			 
+								 <a href="artistasRay.jsf"><h4>Ray</h4></a>
+								 <a href="artistasTakeo.jsf"><h4>Takebayashi</h4></a>
+							 <h2>HR</h2>
+								 <a href="espacoHR.jsf"><h5>Espaço Cultural</h5></a>
+					    </div>
+				    </h:column>
+				    <h:column>
+				     <div class="hero-unit" style="width: 840px ">
+				     	<h:panelGrid id="introducao" columns="0" >
+				     	
+				     		<h:column>
+				     			<h:panelGrid style="align:center;margin-left:210px;">
+				     				<h:panelGrid style="align:center;margin-left:110px;">
+					     				<h2>Artista Ray</h2>
+					     			</h:panelGrid>
+					     			<img src="resources/gfx/rayquadrocapa.jpg" />
+								</h:panelGrid>
+								<h:panelGrid style="align:center;margin-top:30px;">
+										<h4>Quantas vezes sentei em um canto, e meditei minha vida,quantas vezes olhei minhas mãos,e pensei que elas podiam,descrever em parábolas,o meu sentir, ou o meu viver,Mãos que com fios de cabelos,vou tecendo uma urdidura, e com pelos de pinceis duros,vou descrevendo meu viver,pouco importando se são bons ou ruins,não existem filhos feios,para a mãe.
+											Fui me pintando, descrevendo meu próprio viver, tentei ser acadêmico, pintei flores, tentei ser clássico, fui buscar o épico, pintei Joana Dark, mas voltava sempre ao povo, e via escorrer por minhas ruas festivas congadas,e maracatus, o frevo, era o delírio de minha alma, queria gritar,queria cantar, mas não saia.
+											Como Henri Russou, meus quadros as vezes me davam medo, eram meus Doryan Greys, meus espelhos,a refletirem minhas próprias verdades, meu ser ali contido, não me permitia o grito, arranquei minhas roupas, e fui me olhar, pintei-me muitas vezes, fui criando personagens de mim mesmo, fantasiei meu mundo,e nele me escondi.
+											Os anos foram passando, e meus filhos, ali encostados nas paredes,minhas crias, me diziam do mundo a ser conquistado, botei minha cara a tapa, fui ao mundo mostrar meus filhos, que uns dirão são feios, outros extasiadados me chamarão  grande artista, e eu continuo, a pensar em cada rua de minha cidade, em cada menino, que chamei de amigo, em cada bloco de carnaval, que sai com alma de Pierrot, dancei, e compus a Machado um poema-quadro, tentei ser épico, aspirei Machado até que esta se tornasse minha alma, e mineiro calado,ali estava meu modelo,a cobrar-me um quadro.
+											Sai da exposição,pensando assim do José Marins, hoje sentado na porta de minha galeria de arte,penso naquele mineiro,com alma universal,a procurar um tema, um enquadramento, para compor uma ode, as pedras e o ferro,que são a alma dos mineiros.E em gestos lentos e delicados, retoca cada idéia, delineia cada nuance, na busca de ser artista, sem pressa, vai construindo sua obra,mineiramente administrando um vulcão que quer explodir, que com esforço e sacrifício, vai sendo domesticado.
+											
+											
+											Ray
+											Embu Terra das Artes
+											S.P.</h4>
+								</h:panelGrid>
+								</h:column>
+							</h:panelGrid>
+							
+							<h:panelGrid columns="4" id="imagens" style="margin-top:10px;width: 100% ">
+								<h:column>
+									<a class="fancybox" href="resources/gfx/ray2.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray2.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray2.jpg" style="margin-top: 30px;"></img></a>
+								</h:column>
+								<h:column>
+									<a class="fancybox" href="resources/gfx/ray3.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray4.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray4.jpg" style="margin-top: 30px;" ></img></a>	
+								</h:column>
+								<h:column>
+									<a class="fancybox" href="resources/gfx/ray5.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray5.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray6.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray6.jpg" style="margin-top: 30px;"></img></a>
+								</h:column>
+								<h:column>
+									<a class="fancybox" href="resources/gfx/ray6.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray7.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray7.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray8.jpg" style="margin-top: 30px;"></img></a>
+								</h:column>
+							
+						</h:panelGrid>
+					</div>
+				</h:column>
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>
+</html>

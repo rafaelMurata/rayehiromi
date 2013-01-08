@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
+		<div class="hero-unit" align="center" style="height:350px; ">
+			<h2>Mascote da copa do mundo de 2014. O tatu bola esta nessa junto com voce !</h2>
+			<p>Converse com o mascote da copa do mundo 2014.</p>
+				<h:panelGrid columns="3" columnClasses="cssColumn1, cssColumn2" >
+					<h:column>
+						<div class="table" >
+							<h:inputTextarea value="Ola Bem-Vindo meu nome e tatu-bola, gosto de jogar futebol. E voce ?" rows="10" cols="40" styleClass="input-xlarge" id="txarea" style="width:520px;"/>
+						</div>
+						<div class="input" >
+								<input class="xlarge" type="text"> 
+									<a class="btn btn-primary btn-small" title="Enviar!"> Enviar</a>
+								</input>
+								
+						</div>
+					</h:column>
+					<h:column >
+						<div class="page-header" style="margin-left: 20px;margin-top: 10px;">
+							<img src="resources/gfx/tatu-bola.jpg" width="290px" />
+							<A style="margin-left: 40px;">Todos as conversas sao gravadas.</A>
+						</div>
+					</h:column>
+					<h:column >
+						<div class="page-header" style="margin-left: 20px;margin-top: 10px;">
+							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FchatbootTatuBola%3Fskip_nax_wizard%3Dtrue&amp;width=100&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" 
+							scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:288px;" allowTransparency="true"></iframe>
+						</div>
+					</h:column>
+					
+						<h:panelGrid style="align:center;">
+					       <iframe src="http://www.facebook.com/plugins/like.php?href=YOUR_URL"
+					        scrolling="no" frameborder="0"
+					        style="border:none; width:450px; height:24px"></iframe>
+						</h:panelGrid>			
+				</h:panelGrid>
+					
+			<br />
+			
+		</div>
+
+	</ui:define>
+</ui:composition>

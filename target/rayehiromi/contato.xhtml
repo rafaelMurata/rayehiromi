@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
+	
+		<div class="page-header" align="center">
+			<H1>Fale Conosco.</H1>
+		</div>
+		
+			<div class="row" style="margin-left: 450px;">
+				<div class="span4">
+				
+					<p>Mande sua sugestao para nossa ferramenta. Sua opiniao e importante!</p>
+				
+				<div class="span12">
+					<form>
+						<fieldset>
+
+
+							<div class="clearfix">
+								<label for="nome">Nome</label>
+								<div class="input">
+									<input class="xlarge" id="nome" name="nome" size="30"
+										type="text" />
+								</div>
+							</div>
+
+							<div class="clearfix">
+								<label for="email">Email:</label>
+								<div class="input">
+									<input class="xlarge" id="email" name="email" size="30"
+										type="text" />
+								</div>
+
+								<div class="clearfix">
+									<label for="estado">Estado:</label>
+									<div class="input">
+
+										<select name="state" id="state" class="body" onchange="">
+											<option value="0">Selecione</option>
+											<option value="AC">AC</option>
+											<option value="AL">AL</option>
+											<option value="AM">AM</option>
+											<option value="AP">AP</option>
+											<option value="BA">BA</option>
+											<option value="CE">CE</option>
+											<option value="DF">DF</option>
+											<option value="ES">ES</option>
+											<option value="GO">GO</option>
+											<option value="MA">MA</option>
+											<option value="MG">MG</option>
+											<option value="MS">MS</option>
+											<option value="MT">MT</option>
+											<option value="PA">PA</option>
+											<option value="PB">PB</option>
+											<option value="PE">PE</option>
+											<option value="PI">PI</option>
+											<option value="PR">PR</option>
+											<option value="RJ">RJ</option>
+											<option value="RN">RN</option>
+											<option value="RO">RO</option>
+											<option value="RR">RR</option>
+											<option value="RS">RS</option>
+											<option value="SC">SC</option>
+											<option value="SE">SE</option>
+											<option value="SP">SP</option>
+											<option value="TO">TO</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="clearfix">
+									<label for="email">Mensagem:</label>
+									<div class="input">
+										<h:inputTextarea rows="5" cols="10" styleClass="input-xlarge"
+											id="txarea" style="width:220px;" />
+									</div>
+								</div>
+								<div class="actions">
+									<button type="reset" class="btn btn-success">Cancelar</button>
+									<button type="submit" class="btn btn-danger">Enviar</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>

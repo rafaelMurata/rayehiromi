@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<ui:composition 
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+			
+						$('.fancybox').fancybox();
+			
+					});
+				</script>
+				<h:panelGrid columns="2" style="margin-top:80px;width: 100% ">
+			    	<h:column >
+					    <div class="hero-unit" style="margin-top:75px;">
+				    		<h2>Artistas</h2>
+				    			  <a href="artistasAdelmo.jsf"><h4>Adelmo</h4></a>
+				    			 <a href="artistasBanner.jsf"><h4>Banner</h4></a>
+				    			 <a href="artistasBossa.jsf"><h4>Bossa</h4></a>
+				    			 <a href="artistasCamargo.jsf"><h4>Camargo</h4></a>
+				    			 <a href="artistasCardoso.jsf"><h5>Cardoso Vieira</h5></a>
+				    			 <a href="artistasKahan.jsf"><h5>Carlos Kahan</h5></a>
+								 <a href="artistasCherbeluka.jsf"><h4>Cherbeluka</h4></a>
+								 <a href="artistasCorsini.jsf"><h4>Corsini</h4></a>
+								 <a href="artistasDaniele.jsf"><h4>Daiele</h4></a>
+								 <a href="artistasHelio.jsf"><h4>Helio</h4></a>
+								  <a href="artistasHiromi.jsf"><h4>Hiromi</h4></a>
+								 <a href="artistasTorres.jsf"><h4>J Torres</h4></a>	
+								 <a href="artistasMauro.jsf"><h4>M Salles</h4></a>
+								  <a href="artistasNelio.jsf"><h4>Nelio</h4></a>					    			 
+								 <a href="artistasRay.jsf"><h4>Ray</h4></a>
+								 <a href="artistasTakeo.jsf"><h4>Takebayashi</h4></a>
+							 <h2>HR</h2>
+								 <a href="espacoHR.jsf"><h5>Espaço Cultural</h5></a>
+					    </div>
+				    </h:column>
+				    <h:column>
+				     <div class="hero-unit" style="width: 820px ">
+				     	<h:panelGrid id="introducao" columns="0" >
+				     		<h:column>
+				     			<h:panelGrid style="align:center;margin-left:210px;">
+				     				<h:panelGrid style="align:center;margin-left:80px;">
+					     				<h2>Camargo</h2>
+					     			</h:panelGrid>
+								</h:panelGrid>
+								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
+										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								</h:panelGrid>
+							</h:column>
+							</h:panelGrid>
+							
+							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100% ">
+								<h:column>
+									<a class="fancybox" href="resources/gfx/camargo1.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo1.jpg" ></img></a>
+								</h:column>
+								<h:column>
+									<a class="fancybox" href="resources/gfx/camargo2.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo2.jpg" ></img></a>
+								</h:column>
+								<h:column>
+									<a class="fancybox" href="resources/gfx/camargo3.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo3.jpg" ></img></a>
+								</h:column>
+							
+						</h:panelGrid>
+					</div>
+				</h:column>
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>
+</html>
