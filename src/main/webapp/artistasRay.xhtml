@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -70,20 +90,20 @@
 							
 							<h:panelGrid columns="4" id="imagens" style="margin-top:10px;width: 100% ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ray2.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray1.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ray2.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray2.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/ray11.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray22.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray2.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ray3.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray3.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ray4.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray4.jpg" style="margin-top: 30px;" ></img></a>	
+									<a class="fancybox" href="resources/gfx/ray33.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray44.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray4.jpg" style="margin-top: 30px;" ></img></a>	
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ray5.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray5.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ray6.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray6.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/ray55.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray5.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray66.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray6.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ray6.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray7.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ray7.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray8.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/ray77.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray7.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ray88.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/ray8.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 							
 						</h:panelGrid>

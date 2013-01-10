@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -51,18 +71,22 @@
 					     				<h2>Corsini</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-top:35px;">
+										<h4>Concluíra finalmente que o tempo era apenas energia em expansão, e eu, apenas uma pulga em seu organismo, a tentar compreender, e poder conter em mim, a paz necessária para deixar um dia tudo isto. Deixar de ser zelador deste jardim de Éden, que inebriado de tanta beleza, passo a vida a chorar de minhas incapacidades, sem olhar o meu poder, surpreso via quanto eu podia, 
+											minha maquina possuía poderes divinos.
+											Mas ao cego tudo é escuro, e ao surdo tudo é silêncio, e assim cada ser, via o mundo conforme seus dentes lhe faltavam, ou quantos nadas podia amealhar ao longo de uma existência, olhava tudo isto e procurava uma linguagem, uma Gestalt, algo que fosse forma e conteúdo, que eu lhe daria cores, era o que melhor fazia.
+											Meu poder era compreender, e o gesto divino, era dar formas a pensamentos, procurava traduzir em formas e cores vivências individuais, por muitos anos ,me perguntei porque não pintar maçãs, pode-se ser feliz apenas com coisas simples, e então para que  nos fizera tão grande nosso criador?.Ray
+											</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>
 							
 							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100%;margin-left:80px; ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/corsini1.jpg" data-fancybox-group="gallery" title="Quadro Corsini"><img src="resources/gfx/corsini1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/corsini11.jpg" data-fancybox-group="gallery" title="Quadro Corsini"><img src="resources/gfx/corsini1.jpg" ></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/corsini2.jpg" data-fancybox-group="gallery" title="Quadro Corsini"><img src="resources/gfx/corsini2.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/corsini22.jpg" data-fancybox-group="gallery" title="Quadro Corsini"><img src="resources/gfx/corsini2.jpg" ></img></a>
 								</h:column>
 							
 						</h:panelGrid>

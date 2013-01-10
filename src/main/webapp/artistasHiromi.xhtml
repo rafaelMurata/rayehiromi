@@ -13,7 +13,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -47,9 +67,13 @@
 				     			<h:column>
 					     			<h:panelGrid style="align:center;margin-left:210px;">
 					     				<h:panelGrid style="align:center;margin-left:110px;">
+					     					<br />
+					     					<br />
 						     				<h2>Artista Hiromi</h2>
 						     			</h:panelGrid>
+						     			<br />
 						     			<img src="resources/gfx/fotohiromicapa.jpg" />
+						     			<br />
 									</h:panelGrid>
 										<h:panelGrid style="align:center;margin-top:30px;">
 										<h4>Artista plástica Hiromi, se destaca em seus 25 anos de historia em Embu das Artes com seu estilo naif. Seus desenho de observação branco e preto (linhas,luz e sombra,figura,e fundo) formam

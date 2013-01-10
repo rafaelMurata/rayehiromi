@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -51,24 +71,26 @@
 					     				<h2>Adelmo Almeida</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-left:0px;margin-top:35px;">
+										<h4>Não sei o quanto sou consciente, a não ser a medida em que dou respostas sociais, de valores ou de status, a medida em que sou vencedor, vou conquistando o direito a loucura, e quanto mais pago, mais louco posso ser, eu chegara as portas da percepção, compreendera o mecanismo, eu movia o meio.
+	Abrira mão de minha imunidade, em função de minha percepção, sabia poder antecipar eventos, finalmente domara a energia, se bem que as vezes levava um pau danado, muitas vezes louco deitara em um tapete frio, a tentar colocar-me senão igual, mas algo reconhecível, com meu ser anterior. Iconoclasta de sujar palácios, mostrei. a bunda, a quem me chamou Deus, e saí a olhar minha vida, a única em que eu viveria, só se vive uma vez!
+	Olhei meu rastro, vi minha sombra, e pensei o que eu fora, olhei a luz, e perguntai o que serei? Era apenas uma passagem, um estado da matéria, e nada mais! 	Corri e comprei um quadro no Atelier Ray e Hiromi rapidinho.</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>
 							
 							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100% ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ad1.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad1.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ad2.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad2.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/ad11.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ad22.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad2.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ad3.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad3.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ad4.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad4.jpg" style="margin-top: 30px;" ></img></a>	
+									<a class="fancybox" href="resources/gfx/ad33.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ad44.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad4.jpg" style="margin-top: 30px;" ></img></a>	
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/ad5.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad4.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/ad6.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad6.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/ad55.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad4.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/ad66.jpg" data-fancybox-group="gallery" title="Quadro Adelmo"><img src="resources/gfx/ad6.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 							
 						</h:panelGrid>

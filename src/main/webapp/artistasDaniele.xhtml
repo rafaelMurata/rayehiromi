@@ -10,11 +10,31 @@
 <ui:composition 
 	template="/WEB-INF/templates/default.xhtml">
 	<ui:define name="content">
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-				<script type="text/javascript">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -51,24 +71,27 @@
 					     				<h2>Daniele</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-top:35px;">
+										<h4>No  Berçário Meti a mão em meu peito, e ao arrancar meu coração, olhei-o, queria saber de que era contido, meu ser, o que havia alem desta carne e deste sangue, que atormentara tanto minhas noites, humanas. Onde localizava em tudo isto meu ser abstrato, como um aborígine, comi meu próprio coração, para conter Deus, ou o deus de meu adversário.
+											Cada vez que transportei, uma muda de Jagube ou de Rainha do Flor das Águas, sorrateiro fazia experiências do viver ou do morrer, de dois seres divinos, trazia-os para o meu berçário, e por longos dias os via definhar, e morrer, apenas para saber, por pura vaidade.
+											Quando a consciência pesava, explicava ser seu jardineiro, e não o deus da criação, não fazia milagres, apenas descia ou levantava as cortinas, para que o porvir clareasse, descortinava horizontes, de sangue ou riso, de compostos humanos, e da vida. fui alimentando minha vida naquele. jardim, o Berçário da Rainha, e enquanto a vida crescia fui pintando, com as cores de meu viver, pequenos quadradinhos coloridos, para pagar a coca cola, nossa de cada dia.Ray
+											</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>
 							
 							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100% ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/daniele1.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele1.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/daniele2.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele2.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/daniele11.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/daniele22.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele2.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/daniele3.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele3.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/daniele4.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele4.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/daniele33.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/daniele44.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele4.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/daniele5.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele5.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/daniele6.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele6.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/daniele55.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele5.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/daniele66.jpg" data-fancybox-group="gallery" title="Quadro Daniele"><img src="resources/gfx/daniele6.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 							
 						</h:panelGrid>

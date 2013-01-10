@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -51,24 +71,29 @@
 					     				<h2>Ricardo Cherbeluka</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-top:35px;">
+										<h4>As formigas vieram, afoitas, com fome, picotando tudo e carregando para seus filhos, era a lei, assim se processava o viver, era pura simbiose, a morte apenas um estado da matéria com ausência de energia, e nada mais,
+										 uma decomposição incessante, uma troca de estado, isto eu sabia.
+										As sobras eu usava para fazer arte, o que sobrava na natureza alimentava o meu fazer cotidiano, e as ações me mantinham desperto, a espera de uma reação, que também faz parte da dinâmica da natureza
+										Fazer arte, pois o normal qualquer organismo faz, mas difícil não era fazer as merdas que eu fazia, difícil era vende-las, entender quando não me compravam, difícil era ver crianças fazerem melhor que eu, 
+										se alimentavam de sonhos, assim nós dávamos aulas do fazer, quando em mim imperava o vazio, meu gesto não me satisfazia, e como as formigas, fui atrás, catando sobras a observar, os gestos, dos seres para sermos artista.Ray
+										</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>
 							
 							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100% ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/chebeluka1.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka1.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/chebeluka2.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka2.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka11.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka22.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka2.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/chebeluka3.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka3.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/chebeluka4.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka4.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka33.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka44.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka4.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/chebeluka5.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka5.jpg" ></img></a>
-									<a class="fancybox" href="resources/gfx/chebeluka6.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka6.jpg" style="margin-top: 30px;"></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka55.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka5.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/chebeluka66.jpg" data-fancybox-group="gallery" title="Quadro Cherbeluka"><img src="resources/gfx/chebeluka6.jpg" style="margin-top: 30px;"></img></a>
 								</h:column>
 							
 						</h:panelGrid>

@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -48,11 +68,15 @@
 				     		<h:column>
 				     			<h:panelGrid style="align:center;margin-left:210px;">
 				     				<h:panelGrid style="align:center;margin-left:80px;">
+				     					<br />
 					     				<h2>Bossa</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-top:35px;">
+										<h4>Sentado ali no “Berçário da Rainha” pensava em meu papel, a ser representado aqui na terra, de posse do toque de midas, meus olhos e minhas mãos possuíam a mesma sintonia, um via e o outro pintava, pensei-me , artista.!
+											O horizonte, como o grande criador, fazia-o em três gestos, o mar em duas pinceladas, e a terra grudara na tela, cheio de pompas e circunstâncias, deveria ser asfaltado meu caminho. Com meus quadros filhos. Com meus quadradinhos coloridos, sentamos na praça, e lutamos pelo melhor lugar, para que todos os mortais pudessem  me ver, e a meus filhos, e o mundo passou pelo Embu, ou pela República por trinta anos. 
+											Uns foram ,outros voltaram, e passados todos estes anos, meu toque de midas, não me deu ouro, mas valores, e estes dei como conhecimento aos que chegavam, sentado ali a espera das rainhas crescerem, fui colorindo o mundo, e tentando domar meu animal interior, pois este só me permitia ser da tribo do eu sozinho.
+											Os meus azuis, e meus vermelhos carregavam em seu fluir, minha vida, de selvagem tristeza, ou enormes alegrias, com as quais reguei minha família, e assim fui passando por esta terra, cinqüenta anos. Ray.</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>

@@ -14,7 +14,27 @@
 				<script type="text/javascript">
 					$(document).ready(function() {
 			
-						$('.fancybox').fancybox();
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
+
+							openEffect : 'elastic',
+
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(238,238,238,0.85)' 
+									}
+								}
+							}
+						});
 			
 					});
 				</script>
@@ -48,24 +68,30 @@
 				     		<h:column>
 				     			<h:panelGrid style="align:center;margin-left:210px;">
 				     				<h:panelGrid style="align:center;margin-left:80px;">
+					     				<br />
 					     				<h2>Camargo</h2>
 					     			</h:panelGrid>
 								</h:panelGrid>
-								<h:panelGrid style="align:center;margin-left:150px;margin-top:35px;">
-										<h4>Seu talendo e dedicação sempre mostram o exelente trabalho.</h4>
+								<h:panelGrid style="align:center;margin-top:35px;">
+										<h4>Sacrifiquei em lances ousados, certezas absolutas, e segurança na batalha, de meu viver, peguei-me chorando sentado em pedras, por perdas na luta, era a conquista da compreensão, mas conquistas se têm sobre coisas mortas.
+											Pelo planeta afora, procurei a  vida, inconformado estava de ser montado por uma entidade que não me dava explicações, de seus atos se tornarem os meus, e de fazer de mim apenas um parasitário de sua existência corcovei como cavalo chucro, fui selvagem.
+											Dono de uma força descomunal, sai emburrado, de cara virada, não faziam minha vontade, o mundo! Descobri a inutilidade do poder, se este não é meu querer, me vi indignado, com o coração magoado, lutei contra o mundo, em um tempo de jovens ambições.
+											Sentado no Berçário da Rainha, esperei meu tempo, os frutos que sobrevivem amadurecem, e tornam-se outros, me falava ali a rainha, o tempo é apenas um lusco-fusco, uma faisca e nada, não precisa se avexar.
+										
+										Ray.</h4>
 								</h:panelGrid>
 							</h:column>
 							</h:panelGrid>
 							
 							<h:panelGrid columns="3" id="imagens" style="margin-top:50px;width: 100% ">
 								<h:column>
-									<a class="fancybox" href="resources/gfx/camargo1.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo1.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/camargo11.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo1.jpg" ></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/camargo2.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo2.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/camargo22.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo2.jpg" ></img></a>
 								</h:column>
 								<h:column>
-									<a class="fancybox" href="resources/gfx/camargo3.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo3.jpg" ></img></a>
+									<a class="fancybox" href="resources/gfx/camargo33.jpg" data-fancybox-group="gallery" title="Quadro Camargo"><img src="resources/gfx/camargo3.jpg" ></img></a>
 								</h:column>
 							
 						</h:panelGrid>
