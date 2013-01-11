@@ -10,12 +10,32 @@
 	<ui:define name="content">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
+					$(document).ready(function() {
+			
+						$(".fancybox").fancybox({
+							wrapCSS    : 'fancybox-custom',
+							closeClick : true,
 
-			$('.fancybox').fancybox();
+							openEffect : 'elastic',
 
-		});
-	</script>
+							helpers : {
+								thumbs : {
+									width  : 550,
+									height : 550
+								},
+								title : {
+									type : 'inside'
+								},
+								overlay : {
+									css : {
+										'background' : 'rgba(0,0,0,0.85)' 
+									}
+								}
+							}
+						});
+			
+					});
+				</script>
 	<h:panelGrid columns="2" style="margin-top:155px;width: 100% ;background-color: #2c2c2c;">
  		 <h:column >
 		    <div class="hero-unit" style="margin-top:-630px;" >
@@ -56,28 +76,28 @@
 				</h:panelGrid>
 				<h:panelGrid columns="4" id="imagens" style="margin-top:10px;width: 100% ">
 					<h:column>
-						<a class="fancybox" href="resources/gfx/hr1.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr1.jpg" ></img></a>
-						<a class="fancybox" href="resources/gfx/hr2.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr2.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr3.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr3.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr13.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr13.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr111.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr1.jpg" ></img></a>
+						<a class="fancybox" href="resources/gfx/hr222.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr2.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr333.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr3.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1313.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr13.jpg" style="margin-top: 30px;"></img></a>
 					</h:column>
 					<h:column>	
-						<a class="fancybox" href="resources/gfx/hr4.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr4.jpg" ></img></a>
-						<a class="fancybox" href="resources/gfx/hr5.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr5.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr6.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr6.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr14.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr14.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr444.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr4.jpg" ></img></a>
+						<a class="fancybox" href="resources/gfx/hr555.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr5.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr666.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr6.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1414.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr14.jpg" style="margin-top: 30px;"></img></a>
 					</h:column>
 					<h:column>
-						<a class="fancybox" href="resources/gfx/hr7.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr7.jpg" ></img></a>
-						<a class="fancybox" href="resources/gfx/hr8.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr8.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr9.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr9.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr15.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr15.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr777.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr7.jpg" ></img></a>
+						<a class="fancybox" href="resources/gfx/hr888.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr8.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr999.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr9.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1515.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr15.jpg" style="margin-top: 30px;"></img></a>
 					</h:column>									
 					<h:column>
-						<a class="fancybox" href="resources/gfx/hr10.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr10.jpg" ></img></a>
-						<a class="fancybox" href="resources/gfx/hr11.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr11.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr12.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr12.jpg" style="margin-top: 30px;"></img></a>
-						<a class="fancybox" href="resources/gfx/hr16.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr16.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1010.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr10.jpg" ></img></a>
+						<a class="fancybox" href="resources/gfx/hr1111.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr11.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1212.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr12.jpg" style="margin-top: 30px;"></img></a>
+						<a class="fancybox" href="resources/gfx/hr1616.jpg" data-fancybox-group="gallery" title="Quadro ray"><img src="resources/gfx/hr16.jpg" style="margin-top: 30px;"></img></a>
 					</h:column>							
 				</h:panelGrid>
 				</div>

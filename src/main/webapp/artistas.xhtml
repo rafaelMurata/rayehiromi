@@ -10,12 +10,37 @@
 <ui:composition 
 	template="/WEB-INF/templates/default.xhtml">
 	<ui:define name="content">
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+	
+				$(".fancybox").fancybox({
+					wrapCSS    : 'fancybox-custom',
+					closeClick : true,
+
+					openEffect : 'elastic',
+
+					helpers : {
+						thumbs : {
+							width  : 550,
+							height : 550
+						},
+						title : {
+							type : 'inside'
+						},
+						overlay : {
+							css : {
+								'background' : 'rgba(0,0,0,0.85)'
+							}
+						}
+					}
+				});
+	
+			});
+		</script>
 		<h:panelGrid columns="2" style="margin-top:155px;width: 100% ">
-		  
-			 
 			    	<h:column>
-				    <div class="hero-unit">
+				    <div class="hero-unit" style="margin-top:-110px;">
 				    	<h2>Artistas</h2>
 							      <a href="artistasAdelmo.jsf"><h4>Adelmo</h4></a>
 				    			 <a href="artistasBanner.jsf"><h4>Banner</h4></a>
@@ -38,8 +63,26 @@
 				    </div>
 				    </h:column>
 				    <h:column>
-				     <div class="hero-unit" style="width: 840px ">
-						<h3>Hiromi</h3>
+				     <div class="hero-unit" style="width: 840px;margin-top:0px; ">
+				       <br />
+				        	<h3 style="margin-left: 35%">Seja-Bem Vindo.</h3>
+				       <br />
+							<h3 style="margin-left: 15%">Conheça os artistas que fazem parte do Atelier Ray e Hiromi.</h3>
+						<br />
+						<h:panelGrid columns="3" id="imagens" style="margin-top:10px;width: 100%;margin-left:-45px; ">
+								<h:column>
+										<a class="fancybox" href="resources/gfx/momentos11.jpg" data-fancybox-group="gallery" title="Momentos Atelier Ray e Hiromi"><img src="resources/gfx/momentos1.jpg" ></img></a>
+									<br />
+								</h:column>
+								<h:column>
+										<a class="fancybox" href="resources/gfx/Galeria11.jpg" data-fancybox-group="gallery" title="Momentos Atelier Ray e Hiromi"><img src="resources/gfx/Galeria1.jpg" ></img></a>
+									<br />
+								</h:column>
+								<h:column>
+										<a class="fancybox" href="resources/gfx/Const.C.Cult11.jpg" data-fancybox-group="gallery" title="Momentos Atelier Ray e Hiromi"><img src="resources/gfx/Const.C.Cult.jpg" ></img></a>
+								</h:column>
+							
+						</h:panelGrid>
 					</div>
 				    </h:column>
 			 
